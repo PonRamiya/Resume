@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume with Navbar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      padding: 14px 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    nav ul li a:hover {
+      background-color: #575757;
+      border-radius: 4px;
+    }
+
+    /* Main container */
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 5px 0;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #007acc;
+      border-bottom: 2px solid #007acc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .section-content p, .section-content ul {
+      margin: 10px 0;
+    }
+
+    .section-content ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+        margin: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Home Section -->
+    <section id="home">
+      <header>
+        <h1>Pon Ramiya</h1>
+        <p>Email: ramiya.email@example.com | Phone: +123 456 7890 | Location: City, Country</p>
+      </header>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="section-content">
+        <p>Motivated and enthusiastic student passionate about technology and web development. Currently pursuing a degree in Computer Science and looking for an internship in web development to gain hands-on experience.</p>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+      <div class="section-content">
+        <p><strong>Bachelor of Science in Computer Science</strong></p>
+        <p>XYZ University | 2021 – Present</p>
+        <p>Relevant coursework: Data Structures, Algorithms, Web Development, Databases</p>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="section-content">
+        <p><strong>Web Development Intern</strong></p>
+        <p>ABC Company | June 2024 – August 2024</p>
+        <ul>
+          <li>Assisted in developing responsive websites using HTML, CSS, and JavaScript.</li>
+          <li>Collaborated with design teams to ensure seamless integration of front-end designs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="section-content">
+        <p>Feel free to reach out to me through my email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p>You can also find me on LinkedIn or GitHub:</p>
+        <ul>
+          <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Your Name. All rights reserved.
+    </footer>
+  </div>
+
+</body>
+</html>
